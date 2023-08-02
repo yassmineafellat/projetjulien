@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@import 'tailwindcss/tailwind.css';
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&display=swap');
+
+
+body {
+  transform: scale(0.9);
+
+  color: rgb(var(--foreground-rgb));
+  background: #FFF5F0; 
+}
+
+h1 {
+  color: #C74300  ;
+  font-size: 300%;
+  font-family: 'Cinzel', serif;
+  
+}
+
+p{
+  font-family: 'Playfair Display', serif;
+font-weight: 10;
+
+}
+
+
+
+.custom-input {
+  color: #C74300;
+
+  border: 1px solid #C74300;
+  border-radius: none;
+  padding: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.custom-input[type="date"] {
+  color: #C74300;
+  
+  
+}
+
+.custom-input[type="time"] {
+  color: #C74300;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  
+}
+
+.label-text-custom-red {
+  color: #C74300;
+}
+
+.input-text-custom {
+  color: #C74300;
+}
+
+
+
+
+
+.date-input {
+  position: relative;
+}
+
+.date-input::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Ajustez la position horizontale selon vos besoins */
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.calendar-icon {
+  
+  position: absolute;
+}
+  
+.tracking-wide {
+  letter-spacing: 0.5px; 
+
+}
+
+.leading-relaxed {
+  line-height: 1;
+}
+
+
+select {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 0;
+  border-color: #C74300;
+  padding: 10px 6px;
+  margin: 10px 0 7px;
+  width: 250px;
+  background-color: #ffffff;
+  color: #C74300;
+  letter-spacing: -.04em;
+  border: solid;
+  -webkit-appearance: none;
+  }
+  
